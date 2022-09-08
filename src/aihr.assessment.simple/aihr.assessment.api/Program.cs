@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using aihr.assessment.api.Courses.Api.Repositories;
 using aihr.assessment.api.Courses.Api.DbContexts;
 using Microsoft.OpenApi.Models;
+using aihr.assessment.api.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddScoped<IWorkloadRepository, WorkloadRepository>();
 builder.Services.AddControllers();
 
 builder.Services.AddControllers();
