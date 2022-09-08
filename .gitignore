@@ -3,3 +3,5 @@
 ################################################################################
 
 /src/aihr.assessment.simple/.vs/aihr.assessment.simple
+/src/aihr.assessment.simple/aihr.assessment.api/bin/Debug/net6.0
+/src/aihr.assessment.simple/aihr.assessment.api/obj
