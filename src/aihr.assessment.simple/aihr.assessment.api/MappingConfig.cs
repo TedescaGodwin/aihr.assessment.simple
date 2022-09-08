@@ -1,6 +1,9 @@
 ﻿using aihr.assessment.api.Courses.Api.Models;
 using aihr.assessment.api.Courses.Api.Models.Dto;
+using aihr.assessment.api.Models.Dto;
+using aihr.assessment.api.Models;
 using AutoMapper;
+using System.Collections.Generic;
 
 namespace aihr.assessment.api
 {
@@ -12,6 +15,8 @@ namespace aihr.assessment.api
             {
                 config.CreateMap<CourseDto, Course>();
                 config.CreateMap<Course, CourseDto>();
+                config.CreateMap<WorkloadDto, Workload>();
+                config.CreateMap<Workload, WorkloadDto>();
             });
 
             return mappingConfig;

@@ -6,6 +6,7 @@ using System.Data;
 
 namespace aihr.assessment.api.Controllers
 {
+    [Route("api/course")]
     public class CourseController : ControllerBase
     {
         protected ResponseDto _response;
@@ -54,7 +55,6 @@ namespace aihr.assessment.api.Controllers
 
 
         [HttpPost]
-        [Authorize]
         public async Task<object> Post([FromBody] CourseDto courseDto)
         {
             try
@@ -73,7 +73,6 @@ namespace aihr.assessment.api.Controllers
 
 
         [HttpPut]
-        [Authorize]
         public async Task<object> Put([FromBody] CourseDto courseDto)
         {
             try
@@ -91,7 +90,6 @@ namespace aihr.assessment.api.Controllers
         }
 
         [HttpDelete]
-        [Authorize(Roles = "Admin")]
         [Route("{id}")]
         public async Task<object> Delete(int id)
         {

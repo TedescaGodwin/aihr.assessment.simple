@@ -20,7 +20,7 @@ namespace aihr.assessment.api.Courses.Api.Repositories
         public async Task<CourseDto> CreateUpdateCourse(CourseDto courseDto)
         {
             Course course = _mapper.Map<CourseDto, Course>(courseDto);
-            if (course.CourseId > 0)
+            if (course.Id > 0)
             {
                 _db.Courses.Update(course);
             }
@@ -36,7 +36,7 @@ namespace aihr.assessment.api.Courses.Api.Repositories
         {
             try
             {
-                var course = await _db.Courses.FirstOrDefaultAsync(u => u.CourseId == courseId);
+                var course = await _db.Courses.FirstOrDefaultAsync(u => u.Id == courseId);
                 if (course == null)
                 {
                     return false;
@@ -53,7 +53,7 @@ namespace aihr.assessment.api.Courses.Api.Repositories
 
         public async Task<CourseDto> GetCourseById(int courseId)
         {
-            var course = await _db.Courses.Where(x => x.CourseId == courseId).FirstOrDefaultAsync();
+            var course = await _db.Courses.Where(x => x.Id == courseId).FirstOrDefaultAsync();
             return _mapper.Map<CourseDto>(course);
         }
 
