@@ -6,6 +6,6 @@
         public int StudentId { get; set; }
         public double HoursPerWeek { get; set; }
         public double WeeksToStudy { get; set; }
-        public string CourseName { get; set; }
+        public string? CourseName { get; set; }
     }
 }

@@ -1,3 +1,55 @@
 .aihr-spacer {
     flex: 1 1 auto;
   }
+
+  .custom-toolbar {
+    background-color: #e5fcfc;
+    padding: 0 5px;
+    height: 55px;
+  }
+
+  .logo {
+    margin-left: 100px;
+  }
+
+  .menu-space {
+    margin-left: 100px;
+  }
+  
+
+  section {
+    display: table;
+  }
+  
+  .label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  .menu-text {
+    font: normal 14px/18px "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+    text-transform: none;
+}

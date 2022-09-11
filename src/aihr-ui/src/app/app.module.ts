@@ -11,7 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+
 import { CourseListComponent } from './components/course-list/course-list.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -29,7 +32,9 @@ import { CourseListComponent } from './components/course-list/course-list.compon
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    FontAwesomeModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
