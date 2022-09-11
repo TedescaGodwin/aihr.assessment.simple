@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { CourseListComponent } from './components/course-list/course-list.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {MatIconModule} from '@angular/material/icon';
     WorkloadComponent,
     HeaderComponent,
     FooterComponent,
-    ButtonComponent
+    ButtonComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
