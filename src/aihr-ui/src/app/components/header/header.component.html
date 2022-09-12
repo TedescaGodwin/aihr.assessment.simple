@@ -4,9 +4,16 @@
       <img src="https://www.aihr.com/wp-content/uploads/Logo_svg_test3.svg"
       width="190" height="55" alt="AIHR"></a>
   </span>
-  <section class="menu-space">
-    <div class="button-row">
-      <button mat-button class="menu-text">Course Library</button>
-    </div>
-  </section>
+
+
+  <span>
+    <h1>{{ title }}</h1>
+    <app-button
+      *ngIf="hasRoute('/')"
+      color="{{ showAddCourse ? 'red' : 'green' }}"
+      text="{{ showAddCourse ? 'Close' : 'Add' }}"
+      (btnClick)="toggleAddCourse()"
+    ></app-button>
+  </span>
+
 </mat-toolbar>

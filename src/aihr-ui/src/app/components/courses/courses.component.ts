@@ -15,7 +15,7 @@ export class CoursesComponent implements OnInit {
     this.courseService.getCourses().subscribe((courses) => (this.courses = courses ))
   }
 
-  deleteTask(course: Course) {
+  deleteCourse(course: Course) {
     this.courseService
       .deleteCourse(course)
       .subscribe(

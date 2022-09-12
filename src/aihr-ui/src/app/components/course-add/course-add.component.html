@@ -1,0 +1,23 @@
+<form *ngIf="showAddCourse" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="text">Course</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        [(ngModel)]="name"
+        placeholder="Add Course"
+      />
+    </div>
+    <div class="form-control">
+      <label for="day">Hours</label>
+      <input
+        type="number"
+        name="hours"
+        id="hours"
+        [(ngModel)]="hours"
+        placeholder="Add Hours"
+      />
+    </div>
+     <input type="submit" value="Save Course" class="btn btn-block" />
+  </form>

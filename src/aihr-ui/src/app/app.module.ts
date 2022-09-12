@@ -12,9 +12,13 @@ import { ButtonComponent } from './components/button/button.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { FormsModule } from '@angular/forms';
 
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CourseAddComponent } from './components/course-add/course-add.component';
 
 
 @NgModule({
@@ -25,7 +29,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     FooterComponent,
     ButtonComponent,
-    CourseListComponent
+    CourseListComponent,
+    CourseAddComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatToolbarModule,
     MatIconModule,
     FontAwesomeModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule,
+    MatGridListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,6 +12,8 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class CourseListComponent implements OnInit {
   @Input() course: Course | undefined;
   @Output() onDeleteCourse: EventEmitter<Course> = new EventEmitter();
+  @Output() onToggleCourse: EventEmitter<Course> = new EventEmitter();
+
   faTimes = faTimes;
   constructor() {}
 
@@ -19,6 +21,10 @@ export class CourseListComponent implements OnInit {
 
   onDelete(course: Course | undefined) {
     this.onDeleteCourse.emit(course);
+  }
+
+  onToggle(course: Course | undefined) {
+    this.onToggleCourse.emit(course);
   }
 
 }

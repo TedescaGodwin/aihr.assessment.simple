@@ -1,1 +1,6 @@
-<p>courses works!</p>
+<app-course-add (onAddCourse)="addCourse($event)"></app-course-add>
+<app-course-list
+  *ngFor="let course of courses"
+  [course]="course"
+  (onDeleteTask)="deleteCourse(course)"
+></app-course-list>
