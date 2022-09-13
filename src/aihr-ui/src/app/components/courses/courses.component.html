@@ -8,6 +8,15 @@
         <mat-form-field>
             <mat-label>Hours</mat-label>
         </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Course Library</mat-label>
+           <mat-select formControlName="courses">
+            <mat-option *ngFor="let course of courseLibrary.result" [value]="course.name">
+              {{course.name}}
+            </mat-option>
+           </mat-select>
+        </mat-form-field>
     </div>
     <div mat-dialog-actions>
       <button mat-raised-button color="warn" mat-dialog-close>Close</button>
