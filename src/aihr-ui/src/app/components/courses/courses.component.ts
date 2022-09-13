@@ -21,8 +21,8 @@ export class CoursesComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadCourse();
-    if(this.data.empcode!=null && this.data.empcode!=''){
-      this.LoadEditCourse(this.data.empcode);
+    if(this.data.result!=null && this.data.result!=''){
+      this.LoadEditCourse(this.data.result);
     }
   }
 

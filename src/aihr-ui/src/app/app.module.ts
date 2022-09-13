@@ -14,8 +14,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialogModule}  from '@angular/material/dialog';
-import { FormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field'
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {HttpClientModule} from '@angular/common/http';
 
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -46,7 +47,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     MatDialogModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

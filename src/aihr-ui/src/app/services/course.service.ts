@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, Subject, tap  } from 'rxjs';
 import { Course } from 'src/model/course';
 
 const httpOptions = {
@@ -14,8 +14,13 @@ const httpOptions = {
 })
 export class CourseService {
 
-  private apiUrl = 'http://localhost:5000/courses';
+  private apiUrl = 'http://localhost:7171/courses';
   
+  private _refreshrequired=new Subject<void>();
+  get RequiredRefresh(){
+    return this._refreshrequired;
+  }
+
   constructor(private http: HttpClient) { }
 
   getCourses(): Observable<Course[]>{
@@ -34,6 +39,14 @@ export class CourseService {
 
   addCourse(course: Course): Observable<Course> {
     return this.http.post<Course>(this.apiUrl, course, httpOptions);
+  }
+
+  saveCourse(inputdata:any){
+    return this.http.post(this.apiUrl,inputdata).pipe(
+      tap(()=>{
+        this.RequiredRefresh.next();
+      })
+    );
   }
 
 }
