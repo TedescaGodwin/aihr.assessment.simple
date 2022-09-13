@@ -1,12 +1,11 @@
 ﻿using aihr.assessment.api.Courses.Api.Models.Dto;
 using aihr.assessment.api.Courses.Api.Repositories.Interface;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
 
 namespace aihr.assessment.course.Controllers
 {
-    [Route("api/course")]
+    [Route("course")]
     public class CourseController : ControllerBase
     {
         protected ResponseDto _response;

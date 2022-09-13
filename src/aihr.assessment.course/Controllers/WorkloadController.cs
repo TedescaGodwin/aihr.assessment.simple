@@ -1,13 +1,11 @@
 ﻿using aihr.assessment.api.Courses.Api.Models.Dto;
-using aihr.assessment.api.Courses.Api.Repositories;
 using aihr.assessment.api.Courses.Api.Repositories.Interface;
-using aihr.assessment.api.Models;
 using aihr.assessment.api.Models.Dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace aihr.assessment.course.Controllers
 {
-    [Route("api/workload")]
+    [Route("workload")]
     public class WorkloadController : ControllerBase
     {
         protected ResponseDto _response;
