@@ -18,8 +18,6 @@ import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {HttpClientModule} from '@angular/common/http';
 import { MatSelectModule } from "@angular/material/select"
-
-import { CourseListComponent } from './components/course-list/course-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -31,7 +29,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     WorkloadComponent,
     HeaderComponent,
     FooterComponent,
-    CourseListComponent,
   ],
   imports: [
     BrowserModule,
