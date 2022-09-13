@@ -8,17 +8,19 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { WorkloadComponent } from './components/workload/workload.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ButtonComponent } from './components/button/button.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDialogModule}  from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field'
 
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CourseAddComponent } from './components/course-add/course-add.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,7 +30,6 @@ import { CourseAddComponent } from './components/course-add/course-add.component
     WorkloadComponent,
     HeaderComponent,
     FooterComponent,
-    ButtonComponent,
     CourseListComponent,
     CourseAddComponent
   ],
@@ -42,7 +43,10 @@ import { CourseAddComponent } from './components/course-add/course-add.component
     MatMenuModule,
     MatCardModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

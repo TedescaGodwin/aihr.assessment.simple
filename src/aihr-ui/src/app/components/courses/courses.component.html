@@ -1,6 +1,16 @@
-<app-course-add (onAddCourse)="addCourse($event)"></app-course-add>
-<app-course-list
-  *ngFor="let course of courses"
-  [course]="course"
-  (onDeleteTask)="deleteCourse(course)"
-></app-course-list>
+<h1 mat-dialog-title>Course</h1>
+<form [formGroup]="Reactiveform" (ngSubmit)="SaveCourse()">
+    <div mat-dialog-content>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input placeholder="Name" matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Hours</mat-label>
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+      <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Save</button>
+    </div>
+</form>

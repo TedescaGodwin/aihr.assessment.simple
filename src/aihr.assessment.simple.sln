@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aihr.assessment.api", "aihr.assessment.api\aihr.assessment.api.csproj", "{A89E43D1-28C2-4399-B7AB-7DFDE1F1EDA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aihr.assessment.course", "aihr.assessment.course\aihr.assessment.course.csproj", "{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A89E43D1-28C2-4399-B7AB-7DFDE1F1EDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A89E43D1-28C2-4399-B7AB-7DFDE1F1EDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A89E43D1-28C2-4399-B7AB-7DFDE1F1EDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A89E43D1-28C2-4399-B7AB-7DFDE1F1EDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
