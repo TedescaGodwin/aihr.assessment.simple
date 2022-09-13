@@ -36,8 +36,8 @@ export class AppComponent implements OnInit {
   }
 
   GetAll() {
-    this.courseService.getCourses().subscribe(result => {
-      this.coursedata = result;
+    this.courseService.getCourses().subscribe(courses => {
+      this.coursedata.result = courses;
 
       this.dataSource = new MatTableDataSource<Course>(this.coursedata)
       this.dataSource.paginator = this.paginator;

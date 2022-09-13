@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class CourseService {
 
-  private apiUrl = 'http://localhost:7171/courses';
+  private apiUrl = 'https://localhost:7171/course';
   
   private _refreshrequired=new Subject<void>();
   get RequiredRefresh(){

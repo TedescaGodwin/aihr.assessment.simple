@@ -20,7 +20,6 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CourseAddComponent } from './components/course-add/course-add.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -32,7 +31,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     CourseListComponent,
-    CourseAddComponent
   ],
   imports: [
     BrowserModule,

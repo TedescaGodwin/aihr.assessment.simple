@@ -1,12 +1,12 @@
-﻿using aihr.assessment.api.Courses.Api.Models;
-using aihr.assessment.api.Courses.Api.Models.Dto;
+﻿using aihr.assessment.api.Courses.Api.Models.Dto;
 using aihr.assessment.api.Courses.Api.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
-using System.Net;
 
 namespace aihr.assessment.course.Controllers
 {
+    [Route("course")]
     public class CourseController : ControllerBase
     {
         protected ResponseDto _response;
@@ -19,8 +19,7 @@ namespace aihr.assessment.course.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<Course>), (int)HttpStatusCode.OK)]
-        public async Task<object> GetCourses()
+        public async Task<object> Get()
         {
             try
             {
@@ -36,10 +35,9 @@ namespace aihr.assessment.course.Controllers
             return _response;
         }
 
+        [HttpGet]
         [Route("{id}")]
-        [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        [ProducesResponseType(typeof(Course), (int)HttpStatusCode.OK)]
-        public async Task<object> GetCourseById(int id)
+        public async Task<object> Get(int id)
         {
             try
             {
@@ -57,8 +55,7 @@ namespace aihr.assessment.course.Controllers
 
 
         [HttpPost]
-        [ProducesResponseType(typeof(Course), (int)HttpStatusCode.OK)]
-        public async Task<object> CreateCourse([FromBody] CourseDto courseDto)
+        public async Task<object> Post([FromBody] CourseDto courseDto)
         {
             try
             {
@@ -76,7 +73,6 @@ namespace aihr.assessment.course.Controllers
 
 
         [HttpPut]
-        [ProducesResponseType(typeof(Course), (int)HttpStatusCode.OK)]
         public async Task<object> Put([FromBody] CourseDto courseDto)
         {
             try
@@ -95,8 +91,7 @@ namespace aihr.assessment.course.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        [ProducesResponseType(typeof(Course), (int)HttpStatusCode.OK)]
-        public async Task<object> UpdateCourse(int id)
+        public async Task<object> Delete(int id)
         {
             try
             {
