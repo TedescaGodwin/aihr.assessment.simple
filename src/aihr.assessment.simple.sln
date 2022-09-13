@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aihr.assessment.course", "aihr.assessment.course\aihr.assessment.course.csproj", "{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aihr.assessment.apigateway", "aihr.assessment.apigateway\aihr.assessment.apigateway.csproj", "{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

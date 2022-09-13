@@ -1,7 +1,9 @@
-﻿using aihr.assessment.api.Courses.Api.Models.Dto;
+﻿using aihr.assessment.api.Courses.Api.Models;
+using aihr.assessment.api.Courses.Api.Models.Dto;
 using aihr.assessment.api.Courses.Api.Repositories.Interface;
 using aihr.assessment.api.Models.Dto;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace aihr.assessment.course.Controllers
 {
@@ -15,6 +17,7 @@ namespace aihr.assessment.course.Controllers
             _response = new ResponseDto();
             _workloadRepository = workloadRepository;
         }
+
 
         [HttpGet]
         public async Task<object> Get()
