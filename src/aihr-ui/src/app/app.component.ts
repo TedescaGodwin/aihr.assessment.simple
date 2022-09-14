@@ -51,13 +51,13 @@ export class AppComponent implements OnInit {
   }
 
   getrow(row: any) {
-    //console.log(row);
+    console.log(row);
   }
-  FunctionEdit(code: any) {
-    this.OpenDialog('1000ms','600ms',code)
+  FunctionEdit(course: Course) {
+    this.OpenDialog('1000ms','600ms',course)
   }
 
-  FunctionDelete(course: any) {
+  FunctionDelete(course: Course) {
     alertify.confirm("Remove Course","Do you want to remove?",()=>{
       this.courseService.deleteCourse(course).subscribe(result => {
         this.GetAll();

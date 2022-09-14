@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>Course</h1>
+<h1 mat-dialog-title>Add Course</h1>
 <form [formGroup]="Reactiveform" (ngSubmit)="SaveCourse()">
     <div mat-dialog-content>
         <mat-form-field>
@@ -7,6 +7,7 @@
         </mat-form-field>
         <mat-form-field>
             <mat-label>Hours</mat-label>
+            <input placeholder="Hours" matInput formControlName="hours">
         </mat-form-field>
 
         <mat-form-field>
