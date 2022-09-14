@@ -35,3 +35,4 @@ src/aihr.assessment.course/bin/Debug/net6.0/aihr.assessment.course.dll
 src/aihr.assessment.course/bin/Debug/net6.0/aihr.assessment.course.pdb
 /src/aihr.assessment.apigateway/bin/Debug/net6.0
 /src/aihr.assessment.apigateway/obj
+/src/.vs/ProjectEvaluation

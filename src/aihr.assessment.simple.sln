@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aihr.assessment.course", "aihr.assessment.course\aihr.assessment.course.csproj", "{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aihr.assessment.course", "aihr.assessment.course\aihr.assessment.course.csproj", "{AA9D04EA-744D-4B25-8049-D2F52E22F6DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aihr.assessment.apigateway", "aihr.assessment.apigateway\aihr.assessment.apigateway.csproj", "{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aihr.assessment.apigateway", "aihr.assessment.apigateway\aihr.assessment.apigateway.csproj", "{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aihr.logic.test", "aihr.logic.test\aihr.logic.test.csproj", "{BB985526-FA91-424A-870C-EBCB6470F19F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8ED5704-AB88-4CDE-B93D-D5C1673CD80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB985526-FA91-424A-870C-EBCB6470F19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB985526-FA91-424A-870C-EBCB6470F19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB985526-FA91-424A-870C-EBCB6470F19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB985526-FA91-424A-870C-EBCB6470F19F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
