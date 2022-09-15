@@ -71,7 +71,7 @@ namespace aihr.assessment.course.Controllers
                             {
                                 StudentId = requestDto.StudentId,
                                 HoursToStudy = totalMinutes / 60,
-                                WeeksToStudy = Math.Round(totalMinutes / 60 / 56),  //Assumption of 8hrs to study per day
+                                HoursPerWeek = Math.Round(totalMinutes / 60 / 56),  //Assumption of 8hrs to study per day
                                 CourseName = course.Name,
                             };
                             load.Add(workload);

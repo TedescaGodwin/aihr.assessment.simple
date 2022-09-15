@@ -31,4 +31,11 @@ public class CelestialBody : ICelestialBody
 
 
     public bool ItCanSustainLife(bool b) => b;
+
+    public void Colonize()
+    {
+        throw new NotImplementedException();
+    }
+
+
 }

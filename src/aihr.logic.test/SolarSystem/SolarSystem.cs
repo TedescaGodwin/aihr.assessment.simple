@@ -2,6 +2,5 @@
 {
     public class SolarSystem
     {
-        public PhysicalProperties? Properties { get; set; }
     }
 }
